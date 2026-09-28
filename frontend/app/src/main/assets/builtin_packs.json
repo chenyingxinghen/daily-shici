@@ -1,0 +1,52 @@
+{
+  "builtin": [
+    {
+      "pack_id": "tang-300",
+      "name": "唐诗三百首",
+      "tier": "L0",
+      "version": 1,
+      "poem_count": 354,
+      "bytes_raw": 154228,
+      "bytes_gzip": 51439,
+      "sha256": "5afdf1d14f3f1ca38cfe4bfc2693520e2ec22994413d0cbd093aec74d2b107f4",
+      "sha256_raw": "5afdf1d14f3f1ca38cfe4bfc2693520e2ec22994413d0cbd093aec74d2b107f4",
+      "min_poem_id": 1,
+      "max_poem_id": 366,
+      "builtin": true,
+      "download_url": "/packs/tang-300.v1.jsonl.gz",
+      "created_at": "2026-09-23T15:31:52Z",
+      "requires": [],
+      "collections": [
+        {
+          "slug": "tangshi-sanbai",
+          "name": "唐诗三百首",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "pack_id": "song-300",
+      "name": "宋词三百首",
+      "tier": "L0",
+      "version": 1,
+      "poem_count": 280,
+      "bytes_raw": 150656,
+      "bytes_gzip": 55677,
+      "sha256": "8ca501281802bd6be768135b3270bf0f0dc5dccc5c20092197a7da162957034e",
+      "sha256_raw": "8ca501281802bd6be768135b3270bf0f0dc5dccc5c20092197a7da162957034e",
+      "min_poem_id": 367,
+      "max_poem_id": 646,
+      "builtin": true,
+      "download_url": "/packs/song-300.v1.jsonl.gz",
+      "created_at": "2026-09-23T15:31:52Z",
+      "requires": [],
+      "collections": [
+        {
+          "slug": "songci-sanbaishou",
+          "name": "宋词三百首",
+          "sort_order": 20
+        }
+      ]
+    }
+  ]
+}

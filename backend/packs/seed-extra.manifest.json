@@ -1,0 +1,54 @@
+{
+  "pack_id": "seed-extra",
+  "name": "精选扩展",
+  "tier": "L1",
+  "version": 1,
+  "poem_count": 1331,
+  "bytes_raw": 673158,
+  "bytes_gzip": 210898,
+  "sha256": "cf9d1e76fd79f367edb242edfef00b2eb7ed3888f1bd7510314f8451b49fd5d8",
+  "sha256_raw": "88d743de7c416b49d5a89cb4c7489aa359e0e27b37a4c7ea3147e449520547ee",
+  "min_poem_id": 647,
+  "max_poem_id": 347480,
+  "builtin": false,
+  "download_url": "/packs/seed-extra.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:31:52Z",
+  "requires": [],
+  "collections": [
+    {
+      "slug": "shijing",
+      "name": "诗经",
+      "sort_order": 30
+    },
+    {
+      "slug": "chuci",
+      "name": "楚辞",
+      "sort_order": 40
+    },
+    {
+      "slug": "caocao-shiji",
+      "name": "曹操诗集",
+      "sort_order": 80
+    },
+    {
+      "slug": "huajianji",
+      "name": "花间集",
+      "sort_order": 50
+    },
+    {
+      "slug": "nantang-erzhu",
+      "name": "南唐二主词",
+      "sort_order": 60
+    },
+    {
+      "slug": "shuimo-tangshi",
+      "name": "水墨唐诗",
+      "sort_order": 70
+    },
+    {
+      "slug": "nalan-xingde",
+      "name": "纳兰性德诗词",
+      "sort_order": 90
+    }
+  ]
+}

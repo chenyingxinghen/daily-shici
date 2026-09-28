@@ -1,0 +1,9 @@
+# 每日诗词后端依赖（docs/03 §1）
+#
+# 全部为纯 Python 包，无编译依赖、无需 Docker —— 这是选型时明确的约束。
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+jieba>=0.42          # FTS5 无中文分词器，必须预分词（docs/03 §4.1）
+APScheduler>=3.10    # 同进程定时任务，不引 Celery（docs/03 §7.2）
+httpx>=0.27          # TestClient；**同时是问答的检索客户端与流式 LLM 客户端**（docs/06 §6）

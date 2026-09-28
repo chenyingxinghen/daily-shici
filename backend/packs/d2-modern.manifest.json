@@ -1,0 +1,18 @@
+{
+  "pack_id": "d2-modern",
+  "name": "近现代与当代",
+  "tier": "L2",
+  "version": 1,
+  "poem_count": 61072,
+  "bytes_raw": 28254295,
+  "bytes_gzip": 9438913,
+  "sha256": "91f49e67950bab9944b38144a1b92092c850c2decf2bbecbdecda81777282915",
+  "sha256_raw": "1a88b5d02612dc7a8522a7b4b45a9377e20a44c522a0bab30e6a7eb2481fb01b",
+  "min_poem_id": 773797,
+  "max_poem_id": 834868,
+  "builtin": false,
+  "download_url": "/packs/d2-modern.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:32:05Z",
+  "requires": [],
+  "collections": []
+}

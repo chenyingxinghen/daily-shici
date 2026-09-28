@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      应用恒为「素纸朱栏」浅色方案，**没有深色模式**。
+      因此系统状态栏与导航栏一律使用深色图标（windowLightStatusBar = true），
+      与系统是否处于深色模式**无关**。
+
+      这正是此前对比度极低的根因：enableEdgeToEdge() 默认用 SystemBarStyle.auto，
+      会跟随系统深色模式把图标切成浅色，于是白字压在浅色纸底上几乎看不见。
+      Java 侧 MainActivity 也显式指定了 SystemBarStyle.light，两处共同兜住。
+    -->
+    <style name="Theme.Dailyshici" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

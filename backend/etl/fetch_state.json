@@ -1,0 +1,170 @@
+{
+  "shijing.json": {
+    "bytes": 149666,
+    "expected": 146200,
+    "done": true
+  },
+  "chuci.json": {
+    "bytes": 105584,
+    "expected": 103100,
+    "done": true
+  },
+  "caocao.json": {
+    "bytes": 13271,
+    "expected": 13000,
+    "done": true
+  },
+  "huajianji.json": {
+    "bytes": 142743,
+    "expected": 139400,
+    "done": true
+  },
+  "nantang.json": {
+    "bytes": 12593,
+    "expected": 12300,
+    "done": true
+  },
+  "shuimotangshi.json": {
+    "bytes": 40976,
+    "expected": 40000,
+    "done": true
+  },
+  "tangshi-bulu.json": {
+    "bytes": 165,
+    "expected": 165,
+    "done": true
+  },
+  "poet.tang.json": {
+    "bytes": 18090006,
+    "expected": 18090006,
+    "done": true
+  },
+  "poet.song.json": {
+    "bytes": 83019677,
+    "expected": 83019677,
+    "done": true
+  },
+  "yuding-quantangshi.json": {
+    "bytes": 12614206,
+    "expected": 12319000,
+    "done": true
+  },
+  "ci.song.json": {
+    "bytes": 7277219,
+    "expected": 7107000,
+    "done": true
+  },
+  "d2_qin.json": {
+    "bytes": 425,
+    "expected": 400,
+    "done": true
+  },
+  "d2_han.json": {
+    "bytes": 130630,
+    "expected": 127600,
+    "done": true
+  },
+  "d2_weijin.json": {
+    "bytes": 1031408,
+    "expected": 1048576,
+    "done": true
+  },
+  "d2_nanbeichao.json": {
+    "bytes": 1495096,
+    "expected": 1468006,
+    "done": true
+  },
+  "d2_sui.json": {
+    "bytes": 337959,
+    "expected": 337920,
+    "done": true
+  },
+  "d2_liao.json": {
+    "bytes": 4944,
+    "expected": 4915,
+    "done": true
+  },
+  "d2_jin.json": {
+    "bytes": 879514,
+    "expected": 879514,
+    "done": true
+  },
+  "d2_yuan.json": {
+    "bytes": 12446395,
+    "expected": 12478464,
+    "done": true
+  },
+  "d2_yuanmo_mingchu.json": {
+    "bytes": 5611472,
+    "expected": 5662310,
+    "done": true
+  },
+  "d2_ming_1.json": {
+    "bytes": 18901468,
+    "expected": 18874368,
+    "done": true
+  },
+  "d2_ming_2.json": {
+    "bytes": 18059345,
+    "expected": 18035507,
+    "done": true
+  },
+  "d2_ming_3.json": {
+    "bytes": 18309909,
+    "expected": 18350464,
+    "done": true
+  },
+  "d2_ming_4.json": {
+    "bytes": 24605777,
+    "expected": 24641536,
+    "done": true
+  },
+  "d2_mingmo_qingchu.json": {
+    "bytes": 6354579,
+    "expected": 6396314,
+    "done": true
+  },
+  "d2_qing_1.json": {
+    "bytes": 16112753,
+    "expected": 16147661,
+    "done": true
+  },
+  "d2_qing_2.json": {
+    "bytes": 17685085,
+    "expected": 17721344,
+    "done": true
+  },
+  "d2_qingmo_minguochu.json": {
+    "bytes": 6123081,
+    "expected": 6081741,
+    "done": true
+  },
+  "d2_qingmo_jinxiandaichu.json": {
+    "bytes": 4912615,
+    "expected": 4928307,
+    "done": true
+  },
+  "d2_minguo_mo_dangdaichu.json": {
+    "bytes": 697288,
+    "expected": 714000
+  },
+  "d2_jinxiandai.json": {
+    "bytes": 10157086,
+    "expected": 10171187,
+    "done": true
+  },
+  "d2_jinxiandai_mo_dangdaichu.json": {
+    "bytes": 1364582,
+    "expected": 1404928
+  },
+  "d2_dangdai.json": {
+    "bytes": 9761138,
+    "expected": 9752576,
+    "done": true
+  },
+  "nalanxingde.json": {
+    "bytes": 78853,
+    "expected": 77000,
+    "done": true
+  }
+}

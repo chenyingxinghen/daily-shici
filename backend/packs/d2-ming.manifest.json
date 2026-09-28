@@ -1,0 +1,18 @@
+{
+  "pack_id": "d2-ming",
+  "name": "明",
+  "tier": "L3",
+  "version": 1,
+  "poem_count": 248834,
+  "bytes_raw": 110330467,
+  "bytes_gzip": 36882947,
+  "sha256": "fd15aca47f56622de22818e26e80c91af7dde6c95466a459e29741eefa72799f",
+  "sha256_raw": "1a2c2d6e40cee99402e055540f976a8e5e833295aa42b341f135ccdc072396a5",
+  "min_poem_id": 410262,
+  "max_poem_id": 659095,
+  "builtin": false,
+  "download_url": "/packs/d2-ming.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:32:15Z",
+  "requires": [],
+  "collections": []
+}

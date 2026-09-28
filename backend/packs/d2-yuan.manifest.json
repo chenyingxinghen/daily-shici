@@ -1,0 +1,18 @@
+{
+  "pack_id": "d2-yuan",
+  "name": "元",
+  "tier": "L2",
+  "version": 1,
+  "poem_count": 51305,
+  "bytes_raw": 23104142,
+  "bytes_gzip": 7863922,
+  "sha256": "37d3f325210b7bad5b0b149e9f4ce30a76c4fca50e6a6c4b4182b536480f9ad5",
+  "sha256_raw": "18212c695927256b7e4f8aab3543d4d76f14ba9946cd88797729164000adeda2",
+  "min_poem_id": 358957,
+  "max_poem_id": 410261,
+  "builtin": false,
+  "download_url": "/packs/d2-yuan.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:31:57Z",
+  "requires": [],
+  "collections": []
+}

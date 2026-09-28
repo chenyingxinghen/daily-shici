@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      与 ui/theme/Color.kt 里的 ShiciColors 保持一致。
+      XML 侧只有 windowBackground 需要用到色值，故不重复整套令牌；
+      改色时两边都要动 —— 这是 Compose 与 XML 常量无法共享的代价。
+      原先模板遗留的 purple_* / teal_* 已随「素纸朱栏」定稿删除。
+    -->
+    <color name="paper">#FAF5EB</color>
+    <color name="ink">#1A1A1A</color>
+    <color name="vermilion">#C53A2A</color>
+</resources>

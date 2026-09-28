@@ -1,0 +1,18 @@
+{
+  "pack_id": "d2-early",
+  "name": "秦汉魏晋南北朝隋",
+  "tier": "L1",
+  "version": 1,
+  "poem_count": 8773,
+  "bytes_raw": 3870869,
+  "bytes_gzip": 1235055,
+  "sha256": "b9d1ec118332f4327ab58e80a3c4c1fba085cfdfbf6542a6108b0f1838acc5e7",
+  "sha256_raw": "4648e626c1cee9dae6a3176aaf41f0266d9e3a4d15e796a214015d135545e1f9",
+  "min_poem_id": 347481,
+  "max_poem_id": 356253,
+  "builtin": false,
+  "download_url": "/packs/d2-early.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:31:53Z",
+  "requires": [],
+  "collections": []
+}

@@ -1,0 +1,18 @@
+{
+  "pack_id": "song-ci",
+  "name": "宋词",
+  "tier": "L1",
+  "version": 1,
+  "poem_count": 19703,
+  "bytes_raw": 9179344,
+  "bytes_gzip": 3020546,
+  "sha256": "ec08d3ecfa2bb6643cfc02c99a705bb447d2060f73f7352159b5d7b3b9261a83",
+  "sha256_raw": "0b2015b7bc4a2efd4dc2bab5659e476cd3ad657514712a4160934f56149e4b9e",
+  "min_poem_id": 327521,
+  "max_poem_id": 347223,
+  "builtin": false,
+  "download_url": "/packs/song-ci.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:31:53Z",
+  "requires": [],
+  "collections": []
+}

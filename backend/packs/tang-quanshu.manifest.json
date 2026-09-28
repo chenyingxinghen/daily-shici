@@ -1,0 +1,24 @@
+{
+  "pack_id": "tang-quanshu",
+  "name": "全唐诗·唐",
+  "tier": "L2",
+  "version": 1,
+  "poem_count": 35943,
+  "bytes_raw": 15129439,
+  "bytes_gzip": 4737661,
+  "sha256": "7d129b74ae0445077a4d5b7ac2935e6cdd35a9e76de14b20c7aac5b2e5f345f8",
+  "sha256_raw": "f34c55fcd0118155d36078a32b46168cf8bf67cbedc999833ffef6170774f819",
+  "min_poem_id": 1760,
+  "max_poem_id": 57028,
+  "builtin": false,
+  "download_url": "/packs/tang-quanshu.v1.jsonl.gz",
+  "created_at": "2026-09-23T15:31:54Z",
+  "requires": [],
+  "collections": [
+    {
+      "slug": "quan-tang-shi",
+      "name": "全唐诗",
+      "sort_order": 100
+    }
+  ]
+}

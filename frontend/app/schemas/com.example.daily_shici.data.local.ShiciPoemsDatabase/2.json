@@ -1,0 +1,446 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "61bcd420428eac411664f40539afb8c3",
+    "entities": [
+      {
+        "tableName": "poem",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`poemId` INTEGER NOT NULL, `title` TEXT NOT NULL, `content` TEXT NOT NULL, `excerpt` TEXT NOT NULL, `author` TEXT NOT NULL, `dynasty` TEXT NOT NULL, `period` TEXT NOT NULL, `genre` TEXT NOT NULL, `form` TEXT, `cipai` TEXT, `lineCount` INTEGER NOT NULL, `charCount` INTEGER NOT NULL, `isPublicDomain` INTEGER NOT NULL, `weight` INTEGER NOT NULL, `packId` TEXT NOT NULL, PRIMARY KEY(`poemId`))",
+        "fields": [
+          {
+            "fieldPath": "poemId",
+            "columnName": "poemId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "excerpt",
+            "columnName": "excerpt",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "author",
+            "columnName": "author",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dynasty",
+            "columnName": "dynasty",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "period",
+            "columnName": "period",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "genre",
+            "columnName": "genre",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "form",
+            "columnName": "form",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cipai",
+            "columnName": "cipai",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lineCount",
+            "columnName": "lineCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "charCount",
+            "columnName": "charCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPublicDomain",
+            "columnName": "isPublicDomain",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packId",
+            "columnName": "packId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "poemId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_poem_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_weight_poemId` ON `${TABLE_NAME}` (`weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_dynasty_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "dynasty",
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_dynasty_weight_poemId` ON `${TABLE_NAME}` (`dynasty`, `weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_period_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "period",
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_period_weight_poemId` ON `${TABLE_NAME}` (`period`, `weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_genre_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "genre",
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_genre_weight_poemId` ON `${TABLE_NAME}` (`genre`, `weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_cipai_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "cipai",
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_cipai_weight_poemId` ON `${TABLE_NAME}` (`cipai`, `weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_author_weight_poemId",
+            "unique": false,
+            "columnNames": [
+              "author",
+              "weight",
+              "poemId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_author_weight_poemId` ON `${TABLE_NAME}` (`author`, `weight`, `poemId`)"
+          },
+          {
+            "name": "index_poem_packId",
+            "unique": false,
+            "columnNames": [
+              "packId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_poem_packId` ON `${TABLE_NAME}` (`packId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "collection",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`slug` TEXT NOT NULL, `name` TEXT NOT NULL, `packId` TEXT, `builtin` INTEGER NOT NULL, `sortOrder` INTEGER NOT NULL, PRIMARY KEY(`slug`))",
+        "fields": [
+          {
+            "fieldPath": "slug",
+            "columnName": "slug",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packId",
+            "columnName": "packId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "builtin",
+            "columnName": "builtin",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "slug"
+          ]
+        }
+      },
+      {
+        "tableName": "collection_member",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`collectionId` TEXT NOT NULL, `poemId` INTEGER NOT NULL, PRIMARY KEY(`collectionId`, `poemId`))",
+        "fields": [
+          {
+            "fieldPath": "collectionId",
+            "columnName": "collectionId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "poemId",
+            "columnName": "poemId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "collectionId",
+            "poemId"
+          ]
+        }
+      },
+      {
+        "tableName": "installed_pack",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`packId` TEXT NOT NULL, `version` INTEGER NOT NULL, `poemCount` INTEGER NOT NULL, `sha256` TEXT NOT NULL, `installedAt` INTEGER NOT NULL, `bytesGzip` INTEGER NOT NULL, PRIMARY KEY(`packId`))",
+        "fields": [
+          {
+            "fieldPath": "packId",
+            "columnName": "packId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "poemCount",
+            "columnName": "poemCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sha256",
+            "columnName": "sha256",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "installedAt",
+            "columnName": "installedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bytesGzip",
+            "columnName": "bytesGzip",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "packId"
+          ]
+        }
+      },
+      {
+        "tableName": "daily_cache",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`date` TEXT NOT NULL, `poemId` INTEGER NOT NULL, `title` TEXT NOT NULL, `author` TEXT NOT NULL, `dynasty` TEXT NOT NULL, `content` TEXT NOT NULL, `collectionsJson` TEXT, `isOfflineFallback` INTEGER NOT NULL, PRIMARY KEY(`date`))",
+        "fields": [
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "poemId",
+            "columnName": "poemId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "author",
+            "columnName": "author",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dynasty",
+            "columnName": "dynasty",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "collectionsJson",
+            "columnName": "collectionsJson",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isOfflineFallback",
+            "columnName": "isOfflineFallback",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "date"
+          ]
+        }
+      },
+      {
+        "tableName": "facets_cache",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `payloadJson` TEXT NOT NULL, `generatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "payloadJson",
+            "columnName": "payloadJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "generatedAt",
+            "columnName": "generatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "poem_annotation",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`poemId` INTEGER NOT NULL, `annotation` TEXT, `translation` TEXT, `appreciation` TEXT, `sourcesJson` TEXT, `model` TEXT, `generatedAt` TEXT, `cachedAt` INTEGER NOT NULL, PRIMARY KEY(`poemId`))",
+        "fields": [
+          {
+            "fieldPath": "poemId",
+            "columnName": "poemId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "annotation",
+            "columnName": "annotation",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "translation",
+            "columnName": "translation",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "appreciation",
+            "columnName": "appreciation",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourcesJson",
+            "columnName": "sourcesJson",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "generatedAt",
+            "columnName": "generatedAt",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cachedAt",
+            "columnName": "cachedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "poemId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '61bcd420428eac411664f40539afb8c3')"
+    ]
+  }
+}

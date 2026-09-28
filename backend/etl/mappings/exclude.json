@@ -1,0 +1,17 @@
+{
+  "_comment": "docs/01 §3.2 决策不下载、不入库的 12 个文件（语录体与蒙学韵文，与「每日诗词」定位无关）。fetch.py 与 parse 阶段都据此跳过。",
+  "files": [
+    "data/论语/lunyu.json",
+    "data/四书五经/daxue.json",
+    "data/四书五经/zhongyong.json",
+    "data/四书五经/mengzi.json",
+    "data/蒙学/baijiaxing.json",
+    "data/蒙学/qianziwen.json",
+    "data/蒙学/sanzijing-new.json",
+    "data/蒙学/sanzijing-traditional.json",
+    "data/蒙学/dizigui.json",
+    "data/蒙学/zhuzijiaxun.json",
+    "data/蒙学/zengguangxianwen.json",
+    "data/幽梦影/youmengying.json"
+  ]
+}

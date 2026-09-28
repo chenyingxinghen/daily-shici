@@ -1,0 +1,33 @@
+# ===== 临时/工作目录 =====
+.tmp/
+.workbuddy/
+
+# ===== Python / 后端 =====
+**/.venv/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/logs/
+*.log
+
+# ===== ETL 原始数据与中间产物（体积大，可重新生成）=====
+backend/etl/data_raw/
+backend/etl/build/
+backend/etl/id_map.jsonl
+backend/etl/lib/
+
+# ===== 生成的数据包与数据库 =====
+backend/packs/*.jsonl.gz
+backend/server/data/*.db
+
+# ===== 前端 / Android / Gradle =====
+**/.gradle/
+**/.kotlin/
+**/build/
+.idea/
+local.properties
+*.iml
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db

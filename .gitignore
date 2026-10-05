@@ -14,11 +14,15 @@
 backend/etl/data_raw/
 backend/etl/build/
 backend/etl/id_map.jsonl
-backend/etl/lib/
+# 注意：backend/etl/lib/ 是流水线**源码**（pipeline.py / schema.py / ids.py / text.py），
+# 不是中间产物，必须纳入版本控制 —— 它曾被误列在本节而遭排除，导致干净 clone 无法运行 ETL。
 
 # ===== 生成的数据包与数据库 =====
 backend/packs/*.jsonl.gz
+# 含 SQLite 边车文件（-shm / -wal）：它们是运行时临时状态，随进程变化，不应入库。
 backend/server/data/*.db
+backend/server/data/*.db-shm
+backend/server/data/*.db-wal
 
 # ===== 前端 / Android / Gradle =====
 **/.gradle/
